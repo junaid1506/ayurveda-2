@@ -856,3 +856,20 @@ body{
       max-width: 90%;
     }
   }
+.hero_area {
+  height: 100vh;
+  /* background-color:#10e7f4; */
+  /* background-image: url(/images/ChatGPT\ Image\ Apr\ 22\,\ 2025\,\ 05_11_23\ PM\ \(2\).png); */
+  background-image: url(/mid-image.png);
+  background-size: cover;
+  background-position: top;
+  margin-top: 8vh;
+}
+
+.sub_page .hero_area {
+  height: auto;
+}
+
+.hero_area.sub_pages {
+  height: auto;
+}
