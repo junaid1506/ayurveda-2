@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VAVI Gynocare</title>
+  <link rel="stylesheet" href="new.css" />
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700|Roboto:400,700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9fefb;
+      margin: 0;
+      overflow-y: auto;
+    }
+
+    .product-detail-container {
+      max-width: 1200px;
+      height: 90vh;
+      margin: 5vh auto;
+      display: flex;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+    }
+
+    .product-left {
+      width: 35%;
+      background: #ffffff;
+      padding: 20px;
+      border-right: 1px solid #eee;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow-y: auto;
+    }
+
+    .product-left img {
+      max-width: 100%;
+      max-height: 300px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .product-title {
+      font-size: 1.5rem;
+      color: #224f36;
+      text-align: center;
+    }
+
+    .offer-tag {
+      background-color: #d6f3df;
+      color: #1b4f38;
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-size: 1.5rem;
+      color: #25a263;
+    }
+
+    .buy-btn {
+      margin-top: 20px;
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #2d8155;
+      color: white;
+      border-radius: 25px;
+      font-size: 1rem;
+      text-decoration: none;
+    }
+
+    .buy-btn:hover {
+      background-color: #1b4f38;
+    }
+
+    .product-right {
+      width: 65%;
+      overflow-y: auto;
+      padding: 30px;
+    }
+
+    .product-right section {
+      margin-bottom: 30px;
+    }
+
+    .product-right h3 {
+      color: #1b4f38;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .faq, .nutrition, .reviews {
+      background-color: #f1f9f3;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .faq-item strong, .review strong {
+      color: #224f36;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .review p {
+      margin-top: 0;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .product-left::-webkit-scrollbar,
+    .product-right::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    .product-left::-webkit-scrollbar-thumb,
+    .product-right::-webkit-scrollbar-thumb {
+      background-color: #ccc;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid" style="background-color: white; position: fixed; top: 0; z-index: 1000;">
+    <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
+      <a class="navbar-brand" href="index.html">
+        <img style="width: 100%;" src="https://vaviherbal.in/wp-content/uploads/2025/02/vavi.png" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon" style="color: black;border: 2px solid black;"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="d-flex flex-column flex-lg-row align-items-center w-100 justify-content-between">
+          <ul class="navbar-nav">
+            <li class="nav-item active"><a class="nav-link" style="color:black" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" style="color:black" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" style="color:black" href="#products">Products</a></li>
+            <li class="nav-item"><a class="nav-link" style="color:black" href="#contact">Contact us</a></li>
+          </ul>
+          <form class="form-inline">
+            <input type="search" placeholder="Search" style="border: 1px solid black; border-radius: 20px;">
+          </form>
+          <div class="login_btn-contanier ml-0 ml-lg-5">
+            <a href="#" class="vavi-login-link" style="color: black;"><i class="fas fa-user"></i> <span>Login</span></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div class="product-detail-container" style="margin-top: 13vh;">
+    <div class="product-left">
+      <img src="https://vaviherbal.in/wp-content/uploads/2025/02/gyno-regular-300x300.jpg" alt="VAVI Gynocare">
+      <h1 class="product-title">VAVI Gynocare</h1>
+      <span class="offer-tag">Women’s Wellness Formula</span>
+      <p class="price">₹1,500.00</p>
+      <p>Natural ayurvedic formulation for hormonal balance, menstrual regulation, and reproductive health.</p>
+      <p><strong>Available Pack:</strong> 60 Capsules (1 Month Supply)</p>
+      <a href="#" class="buy-btn">Add to Cart</a>
+    </div>
+    <div class="product-right">
+      <section class="faq">
+        <h3>Frequently Asked Questions</h3>
+        <div class="faq-item">
+          <strong>Q: What does Gynocare help with?</strong>
+          <p>Supports hormone balance, relieves irregular periods and improves overall energy.</p>
+        </div>
+        <div class="faq-item">
+          <strong>Q: Safe for long-term use?</strong>
+          <p>Yes, made with 100% natural Ayurvedic herbs, safe for prolonged use.</p>
+        </div>
+      </section>
+
+      <section>
+        <h3>Key Benefits:</h3>
+        <ul>
+          <li>Supports menstrual and hormonal health</li>
+          <li>Helps in PCOS and irregular cycles</li>
+          <li>Boosts vitality & reduces fatigue</li>
+          <li>100% vegetarian herbal formula</li>
+        </ul>
+      </section>
+
+      <section class="nutrition">
+        <h3>Ingredients</h3>
+        <ul>
+          <li>Ashoka</li>
+          <li>Lodhra</li>
+          <li>Shatavari</li>
+          <li>Aloe Vera</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>How to Use:</h3>
+        <ul>
+          <li>1 capsule twice daily after meals</li>
+          <li>Take with warm water</li>
+          <li>Use consistently for 3+ months</li>
+        </ul>
+      </section>
+
+      <section class="reviews">
+        <h3>Customer Reviews</h3>
+        <div class="review">
+          <strong>Neha A.</strong>
+          <p>“Balanced my hormones naturally, very effective!”</p>
+        </div>
+        <div class="review">
+          <strong>Ritu S.</strong>
+          <p>“Great herbal support for PCOS. Highly recommend!”</p>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <section class="product-grid-section" id="products" style="margin-top: 5vh;">
+    <!-- Same related product cards from capsule.html -->
+    <!-- ... -->
+  </section>
+
+  <section class="ayurveda-testimonial-section">
+    <!-- Same testimonials block from capsule.html -->
+    <!-- ... -->
+  </section>
+
+  <footer class="ayurveda-footer">
+    <!-- Same footer from capsule.html -->
+    <!-- ... -->
+  </footer>
+</body>
+</html>

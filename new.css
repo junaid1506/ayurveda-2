@@ -1,0 +1,856 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+
+.vavi-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 60px 40px;
+    background-color: #f8f9f5;
+    background: #f5f0e6; /* soft herbal beige */
+    color: #222;
+  }
+  
+  .feature-box {
+    background: white;
+    border-radius: 10px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .feature-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  .feature-icon {
+    font-size: 2.5rem;
+    color: #4CAF50;
+    margin-bottom: 15px;
+  }
+  
+  .feature-box h3 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #111;
+  }
+  
+  .feature-box p {
+    font-size: 1rem;
+    color: black;
+    line-height: 1.6;
+  }
+   /* feature  */
+
+   .plant-modern-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background: #f5fdf6;
+    padding: 70px 50px;
+    gap: 50px;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .plant-modern-content {
+    flex: 1 1 550px;
+    animation: fadeInLeft 1.2s ease-out;
+  }
+  
+  .plant-modern-title {
+    font-size: 32px;
+    color: #2f5130;
+    margin-bottom: 25px;
+    line-height: 1.4;
+  }
+  
+  .plant-modern-description {
+    font-size: 17px;
+    color: black;
+    margin-bottom: 20px;
+    line-height: 1.7;
+  }
+  
+  .plant-modern-highlights {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+  
+  .plant-modern-highlights li {
+    font-size: 16px;
+    color: #132913;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .plant-modern-highlights li span {
+    color: #7fc97f;
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 20px;
+  }
+  
+  .plant-modern-btn {
+    display: inline-block;
+    background-color: #25a263;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 15px;
+    transition: all 0.3s ease;
+  }
+  
+  .plant-modern-btn:hover {
+    background-color: #6dab6a;
+  }
+  
+  .plant-modern-image {
+    flex: 1 1 350px;
+    display: flex;
+    justify-content: center;
+    animation: zoomBounce 1.4s ease;
+  }
+  
+  .plant-modern-image img {
+    width: 500px;
+    height: 300px;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0 0 30px rgba(139, 196, 138, 0.25);
+  }
+  
+  /* Animations */
+  @keyframes fadeInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes zoomBounce {
+    0% {
+      opacity: 0;
+      transform: scale(0.6);
+    }
+    60% {
+      transform: scale(1.05);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  /* eco card  */
+
+  .eco-modern-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 60px 30px;
+    background-color: #f3f6f2; /* very light sage green */
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .eco-modern-card {
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+    flex: 1 1 300px;
+    max-width: 350px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .eco-modern-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.12);
+  }
+  
+  .eco-modern-icon {
+    font-size: 2.5rem;
+    color: #5d9c7a; /* herbal green */
+    margin-bottom: 15px;
+  }
+  
+  .eco-modern-title {
+    font-size: 1.4rem;
+    color: black;
+    margin-bottom: 15px;
+  }
+  
+  .eco-modern-desc {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: black;
+    margin-bottom: 20px;
+  }
+  
+  .eco-modern-footer {
+    font-size: 0.95rem;
+    color: #ba993d; /* mustard accent */
+    font-weight: 600;
+  }
+  
+  /* female image  */
+
+  .ayurveda-intro-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 60px 30px;
+    background: #f5f0e6; /* soft herbal beige */
+    color: black;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .ayurveda-content {
+    flex: 1 1 480px;
+    max-width: 600px;
+  }
+  
+  .ayurveda-subtitle {
+    font-size: 0.95rem;
+    color: #ba993d; /* earthy mustard */
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
+  
+  .ayurveda-main-title {
+    font-size: 2.4rem;
+    color: black;
+    margin-bottom: 20px;
+    line-height: 1.3;
+  }
+  
+  .ayurveda-highlight {
+    font-size: 1rem;
+    color: #5d9c7a; /* soothing sage green */
+    margin-bottom: 18px;
+    font-style: italic;
+  }
+  
+  .ayurveda-text {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: black;
+    margin-bottom: 16px;
+  }
+  
+  .ayurveda-button {
+    display: inline-block;
+    padding: 12px 26px;
+    background: #5c4508; /* golden mustard */
+    color: #fff;
+    font-weight: bold;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+  
+  .ayurveda-button:hover {
+    background: #a38430;
+  }
+  
+  .ayurveda-image {
+    flex: 1 1 400px;
+    text-align: center;
+  }
+  
+  .ayurveda-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(186, 153, 61, 0.25); /* subtle golden glow */
+  }
+  
+  /* product  */
+
+  .product-grid-section {
+    background: #f9fefb;
+    padding: 50px 20px;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .product-grid-heading {
+    text-align: center;
+    color: #2c4f3b;
+    font-size: 2.4rem;
+    margin-bottom: 40px;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+
+  }
+  
+  .product-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.07);
+    transition: transform 0.3s ease;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .product-card img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin-left: 15px;
+    margin-top: 10px;
+  }
+  
+  .product-content {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .product-title {
+    color: #224f36;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  
+  .product-desc {
+    font-size: 0.95rem;
+    color: black;
+  }
+  
+  .product-price {
+    color: #25a263;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  .product-btn {
+    margin-top: auto;
+    display: inline-block;
+    padding: 8px 14px;
+    background-color: #2d8155;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background 0.3s;
+  }
+  
+  .product-card:hover .product-btn {
+    background-color: #1b4f38;
+  }
+  
+
+  /* about  */
+
+  .ayurveda-about-section {
+    padding: 60px 0;
+    background-color: #f3f8f2; /* Light Sage Green */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2c3e34;
+  }
+  
+  .ayurveda-heading-container h2 {
+    text-align: center;
+    font-size: 36px;
+    color: #5f814f; /* Olive Green */
+    margin-bottom: 40px;
+    font-weight: bold;
+    position: relative;
+  }
+  
+  .ayurveda-heading-container h2::after {
+    content: '';
+    width: 70px;
+    height: 4px;
+    background-color: #93ba84; /* Soft Herbal Accent */
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 8px;
+  }
+  
+  .ayurveda-img-box {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .ayurveda-img-box img {
+    max-width: 70%;
+    height: auto;
+    border-radius: 14px;
+    box-shadow: 0 12px 24px rgba(105, 140, 100, 0.15); /* Subtle green glow */
+  }
+  
+  .ayurveda-detail-box {
+    max-width: 850px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.9;
+    text-align: justify;
+    padding: 0 25px;
+  }
+  
+  .ayurveda-detail-box p {
+    margin-bottom: 22px;
+    color: #415d4b;
+  }
+  
+  .ayurveda-btn-box {
+    text-align: center;
+    margin-top: 35px;
+  }
+  
+  .ayurveda-btn-box a {
+    display: inline-block;
+    padding: 14px 30px;
+    background-color: #6a9a56; /* Herbal Olive Button */
+    color: #fff;
+    font-size: 16px;
+    border-radius: 32px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .ayurveda-btn-box a:hover {
+    background-color: #547c3f;
+    box-shadow: 0 10px 18px rgba(84, 124, 63, 0.25);
+  }
+  
+
+
+  /* cleint  */
+
+  .ayurveda-testimonial-section {
+    background: #f5f0e6; /* soft herbal beige */
+    padding: 70px 20px;
+    font-family: 'Segoe UI', sans-serif;
+    color: #2f4f4f;
+  }
+  
+  .ayurveda-heading-container h2 {
+    text-align: center;
+    font-size: 36px;
+    color: #2d7c4c;
+    margin-bottom: 50px;
+    position: relative;
+  }
+  
+  .ayurveda-heading-container h2::after {
+    content: '';
+    width: 60px;
+    height: 4px;
+    background: #58b07e;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 10px;
+  }
+  
+  .testimonial-carousel {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    animation: fadeIn 1.5s ease-in;
+  }
+  
+  .testimonial-card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(88, 176, 126, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(88, 176, 126, 0.25);
+  }
+  
+  .testimonial-text {
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 20px;
+    color: black;
+  }
+  
+  .testimonial-client {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .testimonial-client img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #58b07e;
+  }
+  
+  .client-info h5 {
+    font-size: 18px;
+    margin: 0;
+    color: #2d7c4c;
+  }
+  
+  .client-info span {
+    font-size: 14px;
+    color: black;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  
+  /* form  */
+
+  .ayurveda-contact-section {
+    padding: 60px 0;
+    background-color: #f4fbf7;
+    font-family: 'Segoe UI', sans-serif;
+    color: #2f4f4f;
+  }
+  
+  .ayurveda-heading-container h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #2d7c4c;
+    margin-bottom: 40px;
+    font-weight: bold;
+    position: relative;
+  }
+  
+  .ayurveda-heading-container h2::after {
+    content: '';
+    width: 60px;
+    height: 4px;
+    background-color: #58b07e;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 10px;
+  }
+  
+  .form-container form {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(45, 124, 76, 0.1);
+  }
+  
+  .form-group label {
+    color: #2d7c4c;
+    font-weight: 600;
+    /* margin-bottom: 6px; */
+  }
+  
+  .form-control {
+    width: 100%;
+    /* padding: 12px 14px; */
+    margin-bottom: 20px;
+    border: 1px solid #cce5d5;
+    border-radius: 6px;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-control:focus {
+    border-color: #58b07e;
+  }
+  
+  .ayurveda-button {
+    padding: 12px 28px;
+    background-color: #2d7c4c;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .ayurveda-button:hover {
+    background-color: #43a871;
+    box-shadow: 0 8px 16px rgba(67, 168, 113, 0.2);
+  }
+  
+  .detail-box h3 {
+    font-size: 28px;
+    color: #2d7c4c;
+    margin-bottom: 15px;
+  }
+  
+  .detail-box p {
+    font-size: 16px;
+    color: black;
+    line-height: 1.7;
+  }
+  
+
+  /* footer  */
+  .ayurveda-footer {
+    background-color: #e6f4ec;
+    padding: 60px 20px 20px;
+    font-family: 'Segoe UI', sans-serif;
+    color: #2f4f4f;
+  }
+  
+  .footer-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+  }
+  
+  .footer-box {
+    flex: 1 1 220px;
+  }
+  
+  .footer-box h4 {
+    font-size: 20px;
+    color: #2d7c4c;
+    margin-bottom: 18px;
+    position: relative;
+  }
+  
+  .footer-box h4::after {
+    content: '';
+    width: 40px;
+    height: 3px;
+    background-color: #58b07e;
+    display: block;
+    margin-top: 6px;
+    border-radius: 5px;
+  }
+  
+  .footer-box p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #3e4e48;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-links a {
+    color: #3e4e48;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    color: #2d7c4c;
+  }
+  
+  .newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .newsletter-form input {
+    padding: 10px 14px;
+    border-radius: 6px;
+    border: 1px solid #cce5d5;
+    font-size: 15px;
+    outline: none;
+  }
+  
+  .newsletter-form button {
+    padding: 10px;
+    background-color: #2d7c4c;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .newsletter-form button:hover {
+    background-color: #43a871;
+  }
+  
+  .social-icons {
+    margin-top: 14px;
+  }
+  
+  .social-icons a {
+    margin-right: 10px;
+    display: inline-block;
+  }
+  
+  .social-icons img {
+    width: 26px;
+    height: 26px;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icons img:hover {
+    transform: scale(1.1);
+  }
+  
+  .footer-bottom {
+    margin-top: 40px;
+    border-top: 1px solid #cce5d5;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 14px;
+    color: #678272;
+  }
+  .social-icons a {
+    margin-right: 12px;
+    font-size: 18px;
+    color: #111; /* black icons */
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    transform: scale(1.15);
+    color: #2d7c4c; /* herbal green on hover */
+  }
+  
+  .footer-box p i {
+    margin-right: 8px;
+    color: #111;
+  }
+  
+
+  .nav-link a:hover{
+    color: red;
+  }
+
+
+  /* banner  */
+
+  .banner {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    /* background-color: #fffaf0; */
+   
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    box-sizing: border-box;
+  }
+  
+  .banner-content {
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    max-width: 600px;
+    color: #1b4f38;
+    margin-left: -50%;
+  }
+  
+  .banner-content h1 {
+    font-size: 4rem;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+  }
+  
+  .banner-content p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    color: #111;
+  }
+  
+  .btn {
+    background-color: #1b4f38;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #25a263;
+  }
+  
+  .main-img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    border-radius: 20px;
+    z-index: 1;
+    box-shadow: 0 10px 30px rgba(160, 82, 45, 0.25);
+  }
+  
+  /* Decorative Elements */
+  .decor {
+    position: absolute;
+
+  
+    opacity: 0.9;
+  }
+  
+  .decor-left {
+    left: -2%; 
+    bottom: 0%;
+    width: 500px;
+  }
+  
+  .decor-right {
+    right: 0%;
+    top: 0%;
+  }
+  
+  @media (max-width: 768px) {
+    .banner-content h1 {
+      font-size: 2rem;
+    }
+  
+    .banner-content p {
+      font-size: 1rem;
+    }
+  
+    .decor {
+      width: 80px;
+    }
+  
+    .main-img {
+      max-width: 90%;
+    }
+  }

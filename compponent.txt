@@ -1,0 +1,39 @@
+<div class="product-right">
+      <section class="faq">
+        <h3>Frequently Asked Questions</h3>
+        <div class="faq-item">
+          <strong>Q: How long before I see results?</strong>
+          <p>Most users feel improvement in 2-3 weeks with consistent use.</p>
+        </div>
+        <div class="faq-item">
+          <strong>Q: Is it safe for long-term use?</strong>
+          <p>Yes, it's 100% herbal and designed for daily long-term support.</p>
+        </div>
+      </section>
+
+      <section class="nutrition">
+        <h3>Nutrition & Ingredients</h3>
+        <ul>
+          <li>Shallaki – anti-inflammatory herb</li>
+          <li>Guggul – joint detoxifier</li>
+          <li>Turmeric – powerful antioxidant</li>
+          <li>Ashwagandha – strengthens bones & nerves</li>
+        </ul>
+      </section>
+
+
+      .faq, .nutrition, .related {
+      background-color: #f1f9f3;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .faq-item {
+      margin-bottom: 10px;
+    }
+
+    .faq-item strong {
+      display: block;
+      margin-bottom: 3px;
+      color: #224f36;
+    }

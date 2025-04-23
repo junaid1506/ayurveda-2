@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f2f2f2;
+    color: #111;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 30px auto;
+    background: #fff;
+    display: flex;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  .product-img img {
+    width: 400px;
+    border-radius: 8px;
+  }
+  .details {
+    flex: 1;
+    padding-left: 30px;
+  }
+  .details h1 {
+    font-size: 2rem;
+    color: #222;
+  }
+  .price-section {
+    margin: 15px 0;
+  }
+  .old-price {
+    text-decoration: line-through;
+    color: #888;
+    margin-right: 10px;
+  }
+  .new-price {
+    font-size: 1.5rem;
+    color: #e53935;
+  }
+  .discount {
+    font-weight: bold;
+    color: #2e7d32;
+  }
+  .desc {
+    margin-top: 10px;
+    line-height: 1.6;
+  }
+  ul {
+    padding-left: 20px;
+  }
+  .btn {
+    margin-top: 20px;
+    display: inline-block;
+    background: #2e7d32;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .btn:hover {
+    background: #1b5e20;
+  }
+  

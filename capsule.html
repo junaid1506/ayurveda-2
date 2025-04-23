@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VAVI Mobility Wellness Capsules</title>
+    <link rel="stylesheet" href="/css/new.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+    <!-- slider stylesheet -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+    <!-- font awesome style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+    <!-- fonts style -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700|Roboto:400,700&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #f9fefb;
+            margin: 0;
+            /* padding: 20px; */
+            height: 100vh;
+            overflow-y: auto;
+
+        }
+
+        .product-detail-container {
+            max-width: 1200px;
+            height: 90vh;
+            margin: 5vh auto;
+            display: flex;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+        }
+
+        .product-left {
+            width: 35%;
+            background: #ffffff;
+            padding: 20px;
+            text-align: left;
+            border-right: 1px solid #eee;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-y: auto;
+        }
+
+        .product-left img {
+            max-width: 100%;
+            max-height: 300px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .product-title {
+            font-size: 1.5rem;
+            color: #224f36;
+            text-align: left;
+            /* margin-bottom: 5px; */
+        }
+
+        .offer-tag {
+            background-color: #d6f3df;
+            color: #1b4f38;
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 6px;
+            /* margin: 5px 0 15px; */
+            font-size: 0.9rem;
+        }
+
+        .price {
+            font-size: 1.5rem;
+            color: #25a263;
+            margin-bottom: 0px;
+        }
+
+        .buy-btn {
+            /* margin-top: 20px; */
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #2d8155;
+            color: white;
+            border-radius: 25px;
+            font-size: 1rem;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        .buy-btn:hover {
+            background-color: #1b4f38;
+        }
+
+        .product-right {
+            width: 65%;
+            overflow-y: auto;
+            padding: 30px;
+        }
+
+        .product-right section {
+            margin-bottom: 30px;
+        }
+
+        .product-right h3 {
+            margin-bottom: 10px;
+            color: #1b4f38;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        .reviews {
+            background-color: #f1f9f3;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .review {
+            margin-bottom: 15px;
+        }
+
+        .review strong {
+            color: #224f36;
+        }
+
+        .review p {
+            margin: 5px 0 0;
+        }
+
+        .faq,
+        .nutrition,
+        .related {
+            background-color: #f1f9f3;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .faq-item {
+            margin-bottom: 10px;
+        }
+
+        .faq-item strong {
+            display: block;
+            margin-bottom: 3px;
+            color: #224f36;
+        }
+
+        /* Scrollbar */
+        .product-left::-webkit-scrollbar,
+        .product-right::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .product-left::-webkit-scrollbar-thumb,
+        .product-right::-webkit-scrollbar-thumb {
+            background-color: #ccc;
+            border-radius: 4px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <div class="container-fluid" style="background-color: white; position: fixed; z-index: 10000; top: 0; ">
+        <nav class="navbar navbar-expand-lg custom_nav-container pt-3" style="background-color: white;">
+            <a class="navbar-brand" href="index.html">
+                <img style="width: 100%;" src="https://vaviherbal.in/wp-content/uploads/2025/02/vavi.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                style="color: black;">
+                <span class="navbar-toggler-icon" style="color: black;border: 2px solid black; outline: black;"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="d-flex  flex-column flex-lg-row align-items-center w-100 justify-content-between">
+                    <ul class="navbar-nav  ">
+                        <li class="nav-item active">
+                            <a style="color: black;" class="nav-link" href="index.html">Home <span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a style="color: black;" class="nav-link" href="#about"> About </a>
+                        </li>
+                        <li class="nav-item">
+                            <a style="color: black;" class="nav-link" href="#products"> Products </a>
+                        </li>
+                        <li class="nav-item">
+                            <a style="color: black;" class="nav-link" href="#contact">Contact us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a style="color: black;" class="nav-link" href="#eco">Eco-Friendly </a>
+                        </li>
+                        <li class="nav-item">
+                            <a style="color: black;" class="nav-link" href="#news"> News </a>
+                        </li>
+
+                    </ul>
+                    <form class="form-inline ">
+                        <input type="search" placeholder="Search" style="border: 1px solid black; border-radius: 20px;">
+                        <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
+                    </form>
+                    <div class="login_btn-contanier ml-0 ml-lg-5">
+                        <a href="#" class="vavi-login-link" style="color: black;">
+                            <i class="fas fa-user" style="margin-right: 5px;"></i>
+                            <span>Login</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+    </div>
+    <div class="product-detail-container"  style="margin-top: 13vh;">
+        <!-- LEFT COLUMN -->
+        <div class="product-left">
+            <img src="https://vaviherbal.in/wp-content/uploads/2018/03/joint-pain-1-min-300x300.webp"
+                alt="VAVI Mobility Wellness Capsules">
+            <h1 class="product-title">VAVI Mobility Wellness Capsules</h1>
+            <span class="offer-tag">Herbal Formula – 100% Veg</span>
+            <p class="price">₹1,340.00</p>
+            <section>
+                <p>VAVI Wellness Capsules are specially formulated with natural herbs to support joint health and
+                    enhance flexibility.</p>
+                <p><strong>Available Pack:</strong> 60 Capsules (1 Month Supply)</p>
+            </section>
+
+            <a href="#" class="buy-btn">Add to Cart</a>
+        </div>
+
+        <!-- RIGHT COLUMN -->
+        <div class="product-right">
+            <section class="faq">
+                <h3>Frequently Asked Questions</h3>
+                <div class="faq-item">
+                    <strong>Q: How long before I see results?</strong>
+                    <p>Most users feel improvement in 2-3 weeks with consistent use.</p>
+                </div>
+                <div class="faq-item">
+                    <strong>Q: Is it safe for long-term use?</strong>
+                    <p>Yes, it's 100% herbal and designed for daily long-term support.</p>
+                </div>
+            </section>
+            <!-- <section>
+        <p>VAVI Wellness Capsules are specially formulated with natural herbs to support joint health and enhance flexibility. Designed to relieve joint discomfort and stiffness, these capsules are 100% vegetarian and free from harmful chemicals.</p>
+        <p><strong>Available Pack:</strong> 60 Capsules (1 Month Supply)</p>
+      </section> -->
+
+            <section class="benefits">
+                <h3>Key Benefits:</h3>
+                <ul>
+                    <li>Helps reduce joint pain and inflammation</li>
+                    <li>Improves mobility and flexibility</li>
+                    <li>Supports cartilage and bone health</li>
+                    <li>Promotes natural joint lubrication</li>
+                    <li>Completely vegetarian and chemical-free</li>
+                </ul>
+            </section>
+            <section class="nutrition">
+                <h3>Nutrition & Ingredients</h3>
+                <ul>
+                    <li>Shallaki – anti-inflammatory herb</li>
+                    <li>Guggul – joint detoxifier</li>
+                    <li>Turmeric – powerful antioxidant</li>
+                    <li>Ashwagandha – strengthens bones & nerves</li>
+                </ul>
+            </section>
+
+            <section class="how-to-use">
+                <h3>How to Use:</h3>
+                <ul>
+                    <li>Take 1 capsule twice a day after meals</li>
+                    <li>Consume with warm water</li>
+                    <li>Use consistently for best results</li>
+                </ul>
+            </section>
+
+            <!-- <section class="ingredients">
+        <h3>Ingredients:</h3>
+        <ul>
+          <li>Shallaki</li>
+          <li>Guggul</li>
+          <li>Turmeric</li>
+          <li>Ashwagandha</li>
+          <li>Other Ayurvedic extracts</li>
+        </ul>
+      </section> -->
+
+            <section class="reviews">
+                <h3>Customer Reviews:</h3>
+                <div class="review">
+                    <strong>Ravi S.</strong>
+                    <p>"I had constant joint stiffness, and after using this for 3 weeks, I feel amazing!"</p>
+                </div>
+                <div class="review">
+                    <strong>Priya M.</strong>
+                    <p>"Great quality and very effective. My knees feel much better!"</p>
+                </div>
+                <div class="review">
+                    <strong>Manoj T.</strong>
+                    <p>"Recommended by my doctor. I can now walk without discomfort."</p>
+                </div>
+            </section>
+        </div>
+    </div>
+    <section class="product-grid-section" id="products" style="margin-top: 5vh;">
+        <h2 class="product-grid-heading">Relatable Products</h2>
+        <div class="product-grid">
+
+            <a href="capsule.html" class="product-card">
+                <img src="https://vaviherbal.in/wp-content/uploads/2018/03/joint-pain-1-min-300x300.webp"
+                    alt="VAVI Mobility Wellness Capsules">
+                <div class="product-content">
+                    <h3 class="product-title">VAVI Wellness Capsules</h3>
+                    <p class="product-desc">100% Veg formula for joint pain relief and enhanced flexibility.</p>
+                    <span class="product-price">₹1,340.00</span>
+                    <span class="product-btn">View Details</span>
+                </div>
+            </a>
+
+            <a href="tea.html" class="product-card">
+                <img src="https://vaviherbal.in/wp-content/uploads/2025/02/slim-tea-300x300.jpg" alt="VAVI Herbal Tea">
+                <div class="product-content">
+                    <h3 class="product-title">VAVI Herbal Tea</h3>
+                    <p class="product-desc">A naturally infused blend for digestive health.</p>
+                    <span class="product-price">₹799.00</span>
+                    <span class="product-btn">View Details</span>
+                </div>
+            </a>
+
+            <a href="gynocare.html" class="product-card">
+                <img src="https://vaviherbal.in/wp-content/uploads/2025/02/gyno-regular-300x300.jpg"
+                    alt="VAVI Gynocare">
+                <div class="product-content">
+                    <h3 class="product-title">VAVI Gynocare</h3>
+                    <p class="product-desc">Ayurvedic support for women’s health and hormonal balance.</p>
+                    <span class="product-price">₹1,500.00</span>
+                    <span class="product-btn">View Details</span>
+                </div>
+            </a>
+
+            <a href="stamina.html" class="product-card">
+                <img src="https://vaviherbal.in/wp-content/uploads/2018/03/960X540-300x300.webp"
+                    alt="Stamina Support Capsules">
+                <div class="product-content">
+                    <h3 class="product-title">Stamina Capsules</h3>
+                    <p class="product-desc">Boost testosterone levels naturally for vitality and strength.</p>
+                    <span class="product-price">₹2,400.00</span>
+                    <span class="product-btn">View Details</span>
+                </div>
+            </a>
+
+            <a href="slim.html" class="product-card">
+                <img src="https://vaviherbal.in/wp-content/uploads/2018/03/Slide-3-1-300x300.png" alt="VAVI Slim Tea">
+                <div class="product-content">
+                    <h3 class="product-title">VAVI Slim Tea</h3>
+                    <p class="product-desc">Herbal tea for digestion, weight balance, and gut relaxation.</p>
+                    <span class="product-price">₹799.00</span>
+                    <span class="product-btn">View Details</span>
+                </div>
+            </a>
+
+            <a href="metobolic.html" class="product-card">
+                <img src="https://vaviherbal.in/wp-content/uploads/2018/03/diabeties1-min-300x300.jpg"
+                    alt="VAVI Metabolic Support Capsules">
+                <div class="product-content">
+                    <h3 class="product-title">VAVI Metabolic Support</h3>
+                    <p class="product-desc">Effective sugar management with Ayurvedic herbs.</p>
+                    <span class="product-price">₹1,350.00</span>
+                    <span class="product-btn">View Details</span>
+                </div>
+            </a>
+
+        </div>
+    </section>
+    <section class="ayurveda-testimonial-section">
+        <div class="container">
+            <div class="ayurveda-heading-container">
+                <h2>What Our Clients Say</h2>
+            </div>
+
+            <div class="testimonial-carousel">
+                <div class="testimonial-card active">
+                    <p class="testimonial-text">
+                        “VAVI's products have completely changed how I feel day to day. Their commitment to natural
+                        wellness is evident from the first use!”
+                    </p>
+                    <div class="testimonial-client">
+                        <img src="images/client.png" alt="Client" />
+                        <div class="client-info">
+                            <h5>Aarav Sharma</h5>
+                            <span>Herbal Enthusiast 🌿</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="testimonial-text">
+                        “Finally found an Ayurvedic brand that cares about sustainability and real results. VAVI is now
+                        a part of my daily routine.”
+                    </p>
+                    <div class="testimonial-client">
+                        <img src="images/client.png" alt="Client" />
+                        <div class="client-info">
+                            <h5>Neha Verma</h5>
+                            <span>Wellness Blogger 🌼</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="testimonial-text">
+                        “Absolutely love their eco-friendly packaging and ethical sourcing. Nature and health in
+                        harmony!”
+                    </p>
+                    <div class="testimonial-client">
+                        <img src="images/client.png" alt="Client" />
+                        <div class="client-info">
+                            <h5>Rishabh Mehta</h5>
+                            <span>Yoga Coach 🧘</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="ayurveda-footer">
+        <div class="container">
+            <div class="footer-grid">
+
+                <!-- About -->
+                <div class="footer-box">
+                    <h4>About Vavi</h4>
+                    <p>
+                        Vavi is dedicated to bringing you the wisdom of ancient Ayurvedic practices with a modern touch.
+                        All our remedies are 100% natural, tested, and trusted for holistic healing and well-being.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-box">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Medicines</a></li>
+                        <li><a href="#">Consultation</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-box">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-phone-alt"></i> +91 9876543210</p>
+                    <p><i class="fas fa-envelope"></i> support@vavi.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Herbal Street, Wellness Nagar, India</p>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="footer-box">
+                    <h4>Join Our Newsletter</h4>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" />
+                        <button type="submit">Subscribe</button>
+                    </form>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 AyurvedaCare. All Rights Reserved. Designed with 🌿 by YourTeam</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
