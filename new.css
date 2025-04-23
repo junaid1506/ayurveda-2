@@ -1,7 +1,9 @@
 html {
     scroll-behavior: smooth;
   }
-
+body{
+    backgoubd-image:url(/mid-image.html)
+}
 
 .vavi-features {
     display: grid;
